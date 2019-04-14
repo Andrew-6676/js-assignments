@@ -59,11 +59,7 @@ function getJSON(obj) {
  *
  */
 function fromJSON(proto, json) {
-    let x = JSON.parse(json);
-    let res = Object.assign(proto, x);
-    let res2 = Rectangle(x.width, x.height);
-    console.log(res, res2);
-    return res2;
+    throw new Error('Not implemented');
 }
 
 
@@ -117,7 +113,7 @@ function fromJSON(proto, json) {
 
 const cssSelectorBuilder = {
     element: function(value) {
-        this.element = value;
+        throw new Error('Not implemented');
     },
 
     id: function(value) {
