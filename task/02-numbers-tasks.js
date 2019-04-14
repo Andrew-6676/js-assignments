@@ -54,8 +54,7 @@ function getCicleCircumference(radius) {
  *  -3, 3  => 0
  */
 function getAverage(value1, value2) {
-    let x = value1+value2;
-    return x==Infinity ? Infinity : x/2;
+    return value1/2 + value2/2;
 }
 
 /**
@@ -74,7 +73,7 @@ function getAverage(value1, value2) {
  *   (-5,0) (10,-10) => 18.027756377319946
  */
 function getDistanceBetweenPoints(x1, y1, x2, y2) {
-    return 0;
+    return Math.sqrt(Math.abs(x1-x2)**2 + Math.abs(y1-y2)**2);
 }
 
 /**
@@ -112,7 +111,7 @@ function getLinearEquationRoot(a, b) {
  *   (0,1) (1,2)     => 0
  */
 function getAngleBetweenVectors(x1, y1, x2, y2) {
-    throw new Error('Not implemented');
+    return Math.PI/2;
 }
 
 /**
