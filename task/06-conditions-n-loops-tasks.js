@@ -372,7 +372,6 @@ function timespanToHumanString(startDate, endDate) {
     if (diff<=90) return 'an hour ago';
 
     diff = diff/60;
-    console.log(diff, Math.round(diff-0.00000001));
     if (diff<=22) return Math.round(diff-0.00000001)+' hours ago';
     if (diff<=36) return 'a day ago';
 
