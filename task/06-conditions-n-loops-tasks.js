@@ -461,9 +461,9 @@ function getCommonDirectoryPath(pathes) {
  *                         [ 6 ]]
  *
  */
-function getMatrixProduct(m1, m2) {
-    var aNumRows = m1.length, aNumCols = a[0].length,
-        bNumRows = m2.length, bNumCols = b[0].length,
+function getMatrixProduct(a, b) {
+    var aNumRows = a.length, aNumCols = a[0].length,
+        bNumCols = b[0].length,
         m = new Array(aNumRows);  // initialize array of rows
     for (var r = 0; r < aNumRows; ++r) {
         m[r] = new Array(bNumCols); // initialize the current row
